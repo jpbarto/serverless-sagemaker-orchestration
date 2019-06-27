@@ -9,7 +9,7 @@ CHANNEL = os.environ['CHANNEL']  # Slack channel to post message to
 
 def lambda_handler(event, context):
     message = event['message']
-    if ENABLED == 'True':
+    if ENABLED == 'true':
         post_message(message)
     return event
 
